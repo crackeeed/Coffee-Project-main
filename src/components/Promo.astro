@@ -1,0 +1,20 @@
+---
+import { Image } from "astro:assets";
+import PromoImage from "../images/promo-bg.png"
+---
+
+<section class="promo">
+  <div class="promo__container container">
+    <Image src={PromoImage} alt="Один стаканчик" class="promo__background"/>
+    <div class="promo__wrapper">
+      <div class="promo__text-wrapper">
+        <h1 class="main-title">Alowishus Delicious Coffee</h1>
+        <p class="text">A drink from the ‘My Alowishus’ bottled brews range OR grab one of our delicious coffee’s.</p>
+      </div>
+      <div class="promo-buttons">
+        <a href="" class="promo__btn btn">Download App</a>
+        <a href="" class="promo__link">Shop Coffee</a>
+      </div>
+    </div>
+  </div>
+</section>

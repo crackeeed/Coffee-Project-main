@@ -1,0 +1,28 @@
+{
+  "name": "watafak",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^3.5.3",
+    "astro-icon": "^0.8.1",
+    "swiper": "^11.0.5"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^6.11.0",
+    "eslint": "^8.53.0",
+    "eslint-plugin-astro": "^0.29.1",
+    "postcss-html": "^1.5.0",
+    "sass": "^1.69.5",
+    "stylelint-config-html": "^1.1.0",
+    "stylelint-config-recess-order": "^4.3.0",
+    "stylelint-config-standard-scss": "^11.1.0",
+    "stylelint-order": "^6.0.3"
+  }
+}

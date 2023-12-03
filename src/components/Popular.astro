@@ -1,0 +1,62 @@
+---
+import { Image } from "astro:assets";
+import PopularImage1 from "../images/popular1.png"
+import PopularImage2 from "../images/popular2.png"
+import PopularImage3 from "../images/popular3.png"
+---
+
+<section class="popular">
+  <div class="popular__container container">
+    <div class="popular__title-wrapper">
+      <h2 class="title popular__title">Best Selling Coffee</h2>
+      <p class="text popular__text">A drink from the ‘My Alowishus’ bottled brews range OR grab one of our delicious coffee’s.</p>
+    </div>
+    <ul class="popular__list">
+      <li class="popular-item">
+        <div class="popular-item__top">
+          <Image src={PopularImage1} alt="Товар 1" class="popular-item__image" />
+          <div class="popular-item__name-wrapper">
+            <p class="popular-item__position">#1 Selling</p>
+            <h4 class="popular-item__title">Double
+              Espresso</h4>
+          </div>
+        </div>
+        <p class="popular-item__text">Amet minim mollit non deserunt dolor ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
+        <div class="popular-item__bottom">
+          <div class="popular-item__price">$59.99</div>
+            <a href="" class="popular-item__btn btn">Order now</a>
+        </div>
+      </li>
+      <li class="popular-item">
+        <div class="popular-item__top">
+          <Image src={PopularImage2} alt="Товар 2" class="popular-item__image" />
+          <div class="popular-item__name-wrapper">
+            <p class="popular-item__position">#2 Selling</p>
+            <h4 class="popular-item__title">Caramel
+              Frappe</h4>
+          </div>
+        </div>
+        <p class="popular-item__text">Amet minim mollit non deserunt dolor ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
+        <div class="popular-item__bottom">
+          <div class="popular-item__price">$59.99</div>
+            <a href="" class="popular-item__btn btn">Order now</a>
+        </div>
+      </li>
+      <li class="popular-item">
+        <div class="popular-item__top">
+          <Image src={PopularImage3} alt="Товар 3" class="popular-item__image" />
+          <div class="popular-item__name-wrapper">
+            <p class="popular-item__position">#3 Selling</p>
+            <h4 class="popular-item__title">Iced
+              Coffee</h4>
+          </div>
+        </div>
+        <p class="popular-item__text">Amet minim mollit non deserunt dolor ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
+        <div class="popular-item__bottom">
+          <div class="popular-item__price">$59.99</div>
+            <a href="" class="popular-item__btn btn">Order now</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>

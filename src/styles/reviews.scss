@@ -1,0 +1,43 @@
+.reviews {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text {
+    font-size: 20px;
+
+    &-wrapper {
+      max-width: 454px;
+    }
+  }
+
+  &__slide {
+    &-wrapper {
+      padding: 40px;
+    }
+  }
+
+  &__info {
+    &-wrapper {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__rating {
+    font: 600 40px Jost, sans-serif;
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__flex {
+    &-wrapper {
+      display: flex;
+      margin-bottom: 100px;
+    }
+  }
+}

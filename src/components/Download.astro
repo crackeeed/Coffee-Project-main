@@ -1,0 +1,21 @@
+---
+import { Image } from "astro:assets";
+import DownloadBG from "../images/download-bg.png";
+---
+
+<section class="download">
+  <div class="download__container container">
+    <div class="download__text-wrapper">
+      <h2 class="download__title title">Instant Coffee At Your Home</h2>
+      <p class="download__text text">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+      <a href="" class="download__btn btn">Download our app</a>
+    </div>
+    <div class="download__image-wrapper">
+      <Image src={DownloadBG} alt="И снова кофе" class="download__background" />
+    </div>
+  </div>
+</section>
