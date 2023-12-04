@@ -81,3 +81,19 @@ import PopularImage3 from "../images/popular3.png";
     </ul>
   </div>
 </section>
+
+<style lang="scss">
+
+  @media (width <= 1150px) {
+    .popular {
+      &__list {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &-item {
+        width: auto;
+      }
+    }
+  }
+</style>
