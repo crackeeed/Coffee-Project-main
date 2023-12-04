@@ -74,3 +74,24 @@ import { Icon } from "astro-icon";
     </div>
   </div>
 </footer>
+
+<style lang="scss">
+
+  @media (width <= 1000px) {
+    .footer {
+      &__container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        justify-content: center;
+      }
+
+      &__bottom {
+        grid-column: 1 / 2;
+      }
+
+      &__subscribe {
+       // justify-self: end;
+      }
+    }
+  }
+</style>
