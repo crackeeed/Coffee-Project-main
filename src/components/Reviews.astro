@@ -35,6 +35,50 @@ import ReviewsImage2 from "../images/reviews-image2.png";
             </div>
           </div>
           <div class="swiper-slide">
+            <Image src={ReviewsImage1} alt="Товар 1" class="reviews__image" />
+            <div class="reviews__slide-wrapper">
+              <div class="reviews__info-wrapper">
+                <p class="reviews__name">Brooklyn Simmons</p>
+                <div class="star-wrapper">
+                  <Image src={Star} alt="Звезда рейтинга" class="star" />
+                  <Image src={Star} alt="Звезда рейтинга" class="star" />
+                  <Image src={Star} alt="Звезда рейтинга" class="star" />
+                  <Image src={Star} alt="Звезда рейтинга" class="star" />
+                  <Image src={Star} alt="Звезда рейтинга" class="star" />
+                </div>
+              </div>
+              <p class="reviews__text">
+                “Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet. Amet minim
+                mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                Velit officia”
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <Image src={ReviewsImage1} alt="Товар 1" class="reviews__image" />
+            <div class="reviews__slide-wrapper">
+              <div class="reviews__info-wrapper">
+                <p class="reviews__name">Brooklyn Simmons</p>
+                <div class="star-wrapper">
+                  <Image src={Star} alt="Звезда рейтинга" class="star" />
+                  <Image src={Star} alt="Звезда рейтинга" class="star" />
+                  <Image src={Star} alt="Звезда рейтинга" class="star" />
+                  <Image src={Star} alt="Звезда рейтинга" class="star" />
+                  <Image src={Star} alt="Звезда рейтинга" class="star" />
+                </div>
+              </div>
+              <p class="reviews__text">
+                “Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet. Amet minim
+                mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                Velit officia”
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
             <Image src={ReviewsImage2} alt="Товар 2" class="reviews__image" />
             <div class="reviews__slide-wrapper">
               <div class="reviews__info-wrapper">
@@ -104,71 +148,27 @@ import ReviewsImage2 from "../images/reviews-image2.png";
   </div>
 </section>
 
-<style lang="scss">
-  .swiper {
-    width: 600px;
-
-    &-wrapper {
-      padding-left: 132px;
-    }
-
-    &-slide {
-      display: flex;
-      flex-direction: column;
-      max-width: 468px;
-    }
-
-    &-button {
-      &-wrapper {
-        display: flex;
-        justify-content: space-between;
-        max-width: 130px;
-      }
-
-      &-next {
-        width: 30px;
-        height: 30px;
-        background-image: url("../images/arrow.svg");
-        background-position: center;
-      }
-
-      &-prev {
-        width: 30px;
-        height: 30px;
-        background-image: url("../images/arrow.svg");
-        background-position: center;
-        transform: scale(-1, 1);
-      }
-    }
-  }
-
-  @media (width <= 1150px) {
-    .reviews {
-      &__container {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-  }
-</style>
-
 <script>
   import Swiper from "swiper";
   import "swiper/css";
-  import { Navigation, Pagination } from "swiper/modules";
+  import { Navigation } from "swiper/modules";
   const swiper = new Swiper(".swiper", {
     // Optional parameters
-    modules: [Navigation, Pagination],
+    modules: [Navigation],
     loop: true,
-    spaceBetween: 35,
-    slidesPerView: "auto",
 
-    // If we need pagination
-    pagination: {
-      el: ".swiper-pagination",
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        centeredSlides: true,
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      1150: {
+        spaceBetween: 35,
+        slidesPerView: "auto",
+      },
     },
-
-    // Navigation arrows
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",

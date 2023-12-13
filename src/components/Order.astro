@@ -1,12 +1,12 @@
 ---
 import { Image } from "astro:assets";
-import OrderImage from "../images/order-bg.png"
+import OrderImage from "../images/order-bg.png";
 ---
 
 <section class="order">
   <div class="order__container container">
     <div class="order__image-wrapper">
-      <Image src={OrderImage} alt="Три стаканчика" class="order__image"/>
+      <Image src={OrderImage} alt="Три стаканчика" class="order__image" />
     </div>
     <div class="order__wrapper">
       <h2 class="title order__title">Order Your Favourite Coffee</h2>
@@ -19,3 +19,18 @@ import OrderImage from "../images/order-bg.png"
     </div>
   </div>
 </section>
+
+<style lang="scss">
+  @media (width <= 850px) {
+    .order {
+      &__container {
+        justify-content: center;
+      }
+
+      &__image {
+        display: none;
+
+      }
+    }
+  }
+</style>
