@@ -138,8 +138,10 @@
 
         &::after {
           position: absolute;
+          top: 50%;
           right: -15px;
           content: '|';
+          transform: translateY(-50%);
         }
       }
     }
