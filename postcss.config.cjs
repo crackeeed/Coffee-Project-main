@@ -1,5 +1,8 @@
 module.exports = {
   plugins: {
-    "postcss-pxtorem": {}
+    "postcss-pxtorem": {
+        mediaQuery: true,
+        propList: ['*'],
+    }
   }
 }
